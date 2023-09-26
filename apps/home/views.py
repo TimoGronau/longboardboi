@@ -10,10 +10,10 @@ class HomeView(View):
     def get(self, request):
         context = {
             "menu_items": [
-                {"title": "Profile", "url": "/profile/", "icon": "fa-solid fa-user"},
                 {"title": "Home", "url": "/", "icon": "fa-solid fa-house"},
                 {"title": "Search", "icon": "fa-solid fa-magnifying-glass"},
                 {"title": "Settings", "icon": "fa-solid fa-gear"},
+                {"title": "Profile", "url": "/profile/", "icon": "fa-solid fa-user"},
                 ],
             }
 

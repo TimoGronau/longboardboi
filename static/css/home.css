@@ -1,13 +1,25 @@
 /* Style for the menu-toolbar */
-.menu-toolbar {
-    background-color: #333; /* Background color for the menu toolbar */
-    color: #fff; /* Text color for menu items */
-    padding: 10px 0; /* Add some padding to top and bottom for spacing */
-    position: fixed; /* Fixed position to keep it at the top */
-    top: 0; /* Position at the top of the viewport */
-    left: 0; /* Align to the left edge of the viewport */
-    width: 100%; /* Take up the full width of the viewport */
+  .menu-toolbar {
+      color: #fff; /* Text color for menu items */
+      padding: 18px 0; /* Add some padding to top and bottom for spacing */
+      position: fixed; /* Fixed position to keep it at the top */
+      top: 0px; /* Position at the top of the viewport */
+      left: 0; /* Align to the left edge of the viewport */
+      width: 100%; /* Take up the full width of the viewport */
+    }
+
+  .menu-toolbar::before{
+    content:"";
+    position: absolute;
+    width: 90%;
+    height: 3px; /* Adjust the height calculation */
+    background-color: #4f45b3;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+    top: 60px; /* Position it 18px below the top of .menu-toolbar */
+    left: 50%;
+    transform: translateX(-50%);
   }
+
   
   /* Style for the menu items */
   .menu-toolbar ul {
@@ -18,7 +30,7 @@
   
   .menu-toolbar ul li {
     display: inline-block; /* Display menu items horizontally */
-    margin-right: 20px; /* Add spacing between menu items */
+    margin-right: 120px; /* Add spacing between menu items */
   }
   
   .menu-toolbar ul li:last-child {
@@ -33,9 +45,12 @@
     font-size: 16px; /* Adjust the font size */
     padding: 10px 20px; /* Add padding to menu items for clickable area */
     transition: background-color 0.3s ease; /* Add a smooth hover effect */
+    border-radius: 10px
   }
   
   .menu-toolbar ul li a:hover {
-    background-color: #555; /* Background color on hover */
+    background-color: transparent;
+    border:2px solid transparent;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
   }
   
